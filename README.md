@@ -6,9 +6,9 @@ A native macOS application that leverages Apple M-series chipset (M1, M2, M3) to
 
 - **Native Apple Silicon Support**: Optimized for M-series chips (M1, M2, M3)
 - **Metal GPU Acceleration**: Uses Metal framework for hardware-accelerated video generation
+- **Focused Prompt Workspace**: Large textbox for describing desired motion and style
 - **Real-time Detection**: Automatically detects and displays chip information
 - **High-Quality Output**: Generates 1080p videos at 30 FPS
-- **SwiftUI Interface**: Modern, native macOS user interface
 
 ## Requirements
 
@@ -55,9 +55,12 @@ The application uses several Apple technologies:
 
 ```
 VideoGenerator/
-├── VideoGeneratorApp.swift      # App entry point
-├── ContentView.swift             # Main UI view
+├── VideoGeneratorApp.swift      # App entry point and menu commands
+├── AppUIState.swift             # Shared UI state for sheets and pickers
+├── ContentView.swift            # Main ChatGPT-style workspace
+├── ModelManager.swift           # Model enumeration, downloads, persistence
 ├── MetalVideoGenerator.swift    # Metal-based video generation engine
+├── Models/                      # Bundled demo models and README
 ├── Assets.xcassets/             # App assets and icons
 ├── Info.plist                   # App configuration
 └── VideoGenerator.entitlements  # App permissions
@@ -65,9 +68,9 @@ VideoGenerator/
 
 ## Output
 
-Generated videos are saved to:
+Generated videos default to:
 ```
-~/Documents/metal_generated_video_[timestamp].mp4
+~/Downloads/metal_generated_video_[model]_[prompt-fragment]_[timestamp].mp4
 ```
 
 ## Technical Details

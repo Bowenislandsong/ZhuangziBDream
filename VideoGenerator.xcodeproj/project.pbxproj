@@ -11,6 +11,9 @@
 		A10000002AC2425600000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000001AC2425600000002 /* ContentView.swift */; };
 		A10000003AC2425600000003 /* MetalVideoGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000002AC2425600000003 /* MetalVideoGenerator.swift */; };
 		A10000004AC2425600000004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A10000003AC2425600000004 /* Assets.xcassets */; };
+		A10000220AC2425600000220 /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000230AC2425600000230 /* ModelManager.swift */; };
+		A10000221AC2425600000221 /* Models in Resources */ = {isa = PBXBuildFile; fileRef = A10000231AC2425600000231 /* Models */; };
+		A10000224AC2425600000224 /* AppUIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000234AC2425600000234 /* AppUIState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		A10000003AC2425600000004 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A10000010AC2425600000010 /* VideoGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A10000011AC2425600000011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A10000230AC2425600000230 /* ModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
+		A10000231AC2425600000231 /* Models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Models; sourceTree = "<group>"; };
+		A10000234AC2425600000234 /* AppUIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUIState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +47,9 @@
 				A10000002AC2425600000003 /* MetalVideoGenerator.swift */,
 				A10000003AC2425600000004 /* Assets.xcassets */,
 				A10000011AC2425600000011 /* Info.plist */,
+				A10000230AC2425600000230 /* ModelManager.swift */,
+				A10000234AC2425600000234 /* AppUIState.swift */,
+				A10000231AC2425600000231 /* Models */,
 			);
 			path = VideoGenerator;
 			sourceTree = "<group>";
@@ -120,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A10000004AC2425600000004 /* Assets.xcassets in Resources */,
+				A10000221AC2425600000221 /* Models in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +143,8 @@
 				A10000003AC2425600000003 /* MetalVideoGenerator.swift in Sources */,
 				A10000002AC2425600000002 /* ContentView.swift in Sources */,
 				A10000001AC2425600000001 /* VideoGeneratorApp.swift in Sources */,
+				A10000220AC2425600000220 /* ModelManager.swift in Sources */,
+				A10000224AC2425600000224 /* AppUIState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
